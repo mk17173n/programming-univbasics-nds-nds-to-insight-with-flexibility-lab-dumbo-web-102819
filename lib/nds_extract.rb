@@ -91,7 +91,7 @@ def movies_with_directors_set(source)
   pp source
   
   source.each do |movie|
-    output << movie_with_director_name(source[:name], movie)
+    output << movie_with_director_name(movie[:name], movie[:movies])
   end
   
   output
