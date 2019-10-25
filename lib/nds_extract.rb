@@ -88,7 +88,7 @@ def movies_with_directors_set(source)
   
   output = []
   
-  puts source[:name]
+  pp source
   
   source[:movies].each do |movie|
     output << movie_with_director_name(source[:name], movie)
