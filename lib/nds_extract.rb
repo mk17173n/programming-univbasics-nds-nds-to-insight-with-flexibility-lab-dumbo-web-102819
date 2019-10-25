@@ -78,7 +78,9 @@ def gross_per_studio(collection)
   collection.each do |movie|
     output[movie[:studio]] += movie[:worldwide_gross]
   end
+  
   output
+  
 end
 
 def movies_with_directors_set(source)
