@@ -48,6 +48,15 @@ def movies_with_director_key(name, movies_collection)
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
+  
+  output = []
+
+  movies_collection.each do |movie_data|
+    output << movie_with_director_name(name, movie_data)
+  end
+
+  output
+  
 end
 
 
@@ -76,6 +85,17 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
+  
+  output = []
+  
+  puts source[:name]
+  
+  # source[:movies].each do |movie|
+  #   output << movie_with_director_name(source[:name], movie)
+  # end
+  
+  output
+  
 end
 
 # ----------------    End of Your Code Region --------------------
