@@ -90,9 +90,9 @@ def movies_with_directors_set(source)
   
   puts source[:name]
   
-  # source[:movies].each do |movie|
-  #   output << movie_with_director_name(source[:name], movie)
-  # end
+  source[:movies].each do |movie|
+    output << movie_with_director_name(source[:name], movie)
+  end
   
   output
   
